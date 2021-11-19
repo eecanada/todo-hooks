@@ -2,7 +2,7 @@ import React from 'react';
 
 const List = ({ todo, setTodo }) => {
   const handleClick = (item) => {
-    setTodo(todo.filter((tod) => tod != itema));
+    setTodo(todo.filter((tod) => tod != item));
   };
 
   console.log(todo);

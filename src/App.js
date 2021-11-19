@@ -13,6 +13,7 @@ const App = () => {
 
   return (
     <div>
+      <p> I have a total of {todo.length} to do today </p>
       <Form todo={todo} setTodo={setTodo} />
       <List todo={todo} setTodo={setTodo} />
     </div>
