@@ -1,7 +1,6 @@
 import React, { Component, useState } from 'react';
 import Form from './components/Form';
 import List from './components/List';
-import logo from './logo.svg';
 import './App.css';
 
 const App = () => {
@@ -12,8 +11,9 @@ const App = () => {
   ]);
 
   return (
-    <div>
-      <p> I have a total of {todo.length} to do today </p>
+    <div className="parent">
+      <h1> Todo List </h1>
+      <p> I have a total of {todo.length} things to do today </p>
       <Form todo={todo} setTodo={setTodo} />
       <List todo={todo} setTodo={setTodo} />
     </div>

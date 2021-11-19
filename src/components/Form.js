@@ -4,16 +4,16 @@ const Form = ({ todo, setTodo }) => {
   let handleSubmit = (event) => {
     event.preventDefault();
     setTodo((todo) => [...todo, event.target.elements.todo.value]);
+    
   };
 
   return (
     <div >
-      <form onSubmit={handleSubmit}>
-        <label >
-          Todo
-          <input type="text" name="todo" />
+      <form className="form" onSubmit={handleSubmit}>
+        <label className="label" >
+          <input placeholder="task" className="submit" type="text" name="todo" />
         </label>
-        <input  type="submit" value="Submit" />
+        <input className="submit" type="submit" value="Submit" />
       </form>
     </div>
   );
