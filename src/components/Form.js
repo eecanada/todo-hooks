@@ -1,23 +1,19 @@
 import React from 'react';
 
-const Form = () => {
-  let handleChange = (event) => {
-    console.log(event.target.value);
-  };
-
+const Form = ({ todo, setTodo }) => {
   let handleSubmit = (event) => {
     event.preventDefault();
-    console.log('hit');
+    setTodo((todo) => [...todo, event.target.elements.todo.value]);
   };
 
   return (
-    <div>
+    <div >
       <form onSubmit={handleSubmit}>
-        <label>
+        <label >
           Todo
-          <input type="text" name="name" onChange={handleChange} />
+          <input type="text" name="todo" />
         </label>
-        <input type="submit" value="Submit" />
+        <input  type="submit" value="Submit" />
       </form>
     </div>
   );
