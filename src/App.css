@@ -65,6 +65,22 @@ p{
   margin: 0.5rem auto;
 }
 
+.submitButton{
+  padding: 0.2rem 1rem !important;
+  background: rgba(255, 255, 255, 0);
+  outline: 0;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
+
+.submitButton:hover{
+  background-color: rgb(0, 0, 0);
+  outline: 0;
+  border: 1px solid rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
 input{
   text-align:center;
 }

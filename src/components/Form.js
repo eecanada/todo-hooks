@@ -13,7 +13,7 @@ const Form = ({ todo, setTodo }) => {
         <label className="label" >
           <input placeholder="task" className="submit" type="text" name="todo" />
         </label>
-        <input className="submit" type="submit" value="Submit" />
+        <input className="submit" className="submitButton"  type="submit" value="Submit" />
       </form>
     </div>
   );
